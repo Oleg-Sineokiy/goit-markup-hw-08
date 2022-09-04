@@ -1,0 +1,25 @@
+.logotype {
+  background-color: var(--header-background-color);
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo-link {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo__header {
+  font-family: 'Raleway', sans-serif;
+  color: var(--logo-style);
+}

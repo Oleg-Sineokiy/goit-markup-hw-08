@@ -1,0 +1,147 @@
+.header {
+  .container {
+    height: 60px;
+    padding: 0;
+  }
+}
+
+.header-logo {
+  color: #212121;
+}
+
+.logo-link {
+  margin-left: 15px;
+  width: 134px;
+  height: 28px;
+}
+
+.open-menu {
+  border-color: white;
+  border: 0;
+  padding: 0;
+  margin: 15px;
+  background-color: var(--white-color);
+  .open-menu__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.mob-menu {
+  // position: absolute;
+  // width: 100vw;
+  // height: 100vh;
+  background-color: var(--white-color);
+}
+
+.mob-menu__close {
+  border-color: white;
+  border: 0;
+  padding: 0;
+  margin: 10px 15px 0 0;
+  background-color: var(--white-color);
+}
+
+// .mob-menu-close {
+// }
+// .mob-menu-icon-close {
+// }
+// .mob-menu-nav {
+// }
+// .mob-menu-list {
+// }
+// .list {
+// }
+// .mob-menu-item {
+// }
+.mob-menu-link {
+  width: 219px;
+  height: 48px;
+  left: 40px;
+  top: 132px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+// .text-logo {
+// }
+// .current {
+//   color: #2196f3;
+// }
+// .mob-contacts {
+// }
+// .connection {
+// }
+// .mob-contacts-email {
+// }
+.mob-contacts-link-email {
+  width: 296px;
+  height: 40px;
+  left: 40px;
+  top: 562px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-contacts-link {
+  width: 231px;
+  height: 28px;
+  left: 40px;
+  top: 634px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+// .info {
+// }
+// .mob-contacts-telephone {
+// }
+// .contacts {
+// }
+// .soc-mob {
+// }
+.soc-mob-list {
+  display: flex;
+}
+// .soc-mob-item {
+// }
+.border {
+  position: absolute;
+  display: inline;
+}
+
+.soc-mob-link {
+  text-decoration: none;
+  width: 85px;
+  height: 22px;
+  left: 40px;
+  top: 726px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.border-mob {
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  left: 135px;
+  top: 726px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+.soc-mob-icon {
+}

@@ -1,0 +1,67 @@
+.sbc {
+  margin-left: auto;
+  display: flex;
+}
+
+.subscribe__form {
+  padding-top: 12px;
+}
+
+.subscribe__name {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.subscribe__correct {
+  display: flex;
+}
+
+.subscribe__input {
+  padding-left: 16px;
+  height: 50px;
+  width: 358px;
+  border-color: #ffffff4d;
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  color: var(--white-color);
+  &:focus-visible {
+    outline-color: var(--accent-color);
+  }
+  &:not(:placeholder-shown):required:valid {
+    border-color: var(--accent-color);
+  }
+  &:not(:placeholder-shown):required {
+    border-color: red;
+  }
+}
+
+.subscribe__button {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  border: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+  fill: var(--white-color);
+}
