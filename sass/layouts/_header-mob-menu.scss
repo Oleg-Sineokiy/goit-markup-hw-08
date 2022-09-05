@@ -50,9 +50,9 @@
 }
 
 .mob-menu-close {
-  position: absolute;
-  left: 90%;
-
+  position: fixed;
+  right: 15px;
+  top: 10px;
   border: 0;
   padding: 0;
   margin: 10px 15px 0 0;
@@ -62,7 +62,7 @@
 .mob-menu-icon-close {
   border-color: white;
   &:hover {
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
 

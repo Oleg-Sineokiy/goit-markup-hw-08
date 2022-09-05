@@ -1,6 +1,8 @@
 .sbc {
   margin-left: auto;
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe__form {

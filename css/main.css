@@ -297,8 +297,9 @@ img {
 }
 
 .mob-menu-close {
-  position: absolute;
-  left: 90%;
+  position: fixed;
+  right: 15px;
+  top: 10px;
   border: 0;
   padding: 0;
   margin: 10px 15px 0 0;
@@ -309,7 +310,7 @@ img {
   border-color: white;
 }
 .mob-menu-icon-close:hover {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .mob-menu-nav .text-logo {
@@ -1003,7 +1004,11 @@ img {
 
 .sbc {
   margin-left: auto;
-  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .sbc {
+    display: flex;
+  }
 }
 
 .subscribe__form {
