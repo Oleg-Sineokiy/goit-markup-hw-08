@@ -4,11 +4,14 @@
 
 .buttons-nav__list {
   display: flex;
-  justify-content: center;
-}
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 15px;
+  column-gap: 8px;
 
-.buttons-nav__item:not(:first-child) {
-  margin-left: 10px;
+  @media screen and (min-width: 786px) {
+    justify-content: center;
+  }
 }
 
 .buttons-nav__current {

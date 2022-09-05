@@ -64,3 +64,13 @@
   fill: currentColor;
   margin-right: 10px;
 }
+
+.basement__item {
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}

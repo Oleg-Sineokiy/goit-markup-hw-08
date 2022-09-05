@@ -38,7 +38,7 @@
           </ul>
         </nav>
         <ul class="site-contacts connection">
-          <li class="site-contacts-email">
+          <li class="site-contacts__email">
             <a href="mailto:info@devstudio.com" class="site-contacts-link info text-logo">
               <svg class="site-contacts-icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -46,7 +46,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="site-contacts-telephone">
+          <li class="site-contacts__telephone">
             <a href="tel:+380961111111" class="site-contacts-link info text-logo">
               <svg class="site-contacts-icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-telephone"></use>
@@ -563,12 +563,12 @@
     <footer class="footer main-bottom">
       <div class="container">
         <div class="footer__container">
-          <div class="footer-logo-top">
-            <a href="./index.html" lang="en" class="logo-link text-logo"
-              >Web<span class="header-logo bottom text-logo">Studio</span></a
-            >
-          </div>
           <div class="footer-bas-top">
+            <div class="footer-logo-top">
+              <a href="./index.html" lang="en" class="logo-link text-logo logo-footer"
+                >Web<span class="header-logo bottom text-logo">Studio</span></a
+              >
+            </div>
             <address class="basement">
               <ul class="basement__list">
                 <li class="basement__item">
@@ -593,43 +593,45 @@
               </ul>
             </address>
           </div>
+
+          <div class="footer-social clone">
+            <h2 class="footer-social__title">Присоединяйтесь</h2>
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social clone">
-          <h2 class="footer-social__title">Присоединяйтесь</h2>
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <!-- підписка -->
         <div class="subscribe sbc">
           <form action="#" class="subscribe__form">
-            <p class="subscribe__name">Подпишитесь на рассылку></p>
+            <p class="subscribe__name">Подпишитесь на рассылку</p>
             <div class="subscribe__correct">
               <input
                 type="text"
@@ -650,6 +652,7 @@
         </div>
       </div>
     </footer>
+    <!-- кінець футеру -->
     <div class="backdrop is-hidden bdp" data-modal>
       <div class="modal-container section">
         <button type="button" class="modal-container__close" data-modal-close>
