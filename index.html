@@ -55,9 +55,9 @@
             >
           </li>
         </ul>
-        <div class="mob-menu is-hidden">
+        <div class="mob-menu js-menu-container" id="mobile-menu">
           <div class="mob-menu-top">
-            <button class="mob-menu-close" type="button">
+            <button class="mob-menu-close js-close-menu" type="button">
               <svg class="mob-menu-icon-close" width="40" height="40">
                 <use href="./images/symbol-defs.svg#icon-close-menu"></use>
               </svg>
@@ -132,7 +132,12 @@
             </div>
           </div>
         </div>
-        <button class="open-menu" type="button">
+        <button
+          class="open-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
           <svg class="open-menu__icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-open-menu"></use>
           </svg>
@@ -725,7 +730,14 @@
         </div>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
