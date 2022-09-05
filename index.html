@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -55,12 +55,7 @@
             >
           </li>
         </ul>
-        <div class="mob-menu">
-          <button class="open-menu" type="button">
-            <svg class="open-menu__icon" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-open-menu"></use>
-            </svg>
-          </button>
+        <div class="mob-menu is-hidden">
           <button class="mob-menu-close" type="button">
             <svg class="mob-menu-icon-close" width="40" height="40">
               <use href="./images/symbol-defs.svg#icon-close-menu"></use>
@@ -69,7 +64,7 @@
           <nav class="mob-menu-nav">
             <ul class="mob-menu-list list">
               <li class="mob-menu-item">
-                <a href="" class="mob-menu-link text-logo current">Студия</a>
+                <a href="" class="mob-menu-link text-logo">Студия</a>
               </li>
               <li class="mob-menu-item">
                 <a href="./portfolio.html" class="mob-menu-link text-logo">Портфолио</a>
@@ -87,51 +82,40 @@
             </li>
             <li class="mob-contacts-telephone contacts">
               <a href="tel:+380961111111" class="mob-contacts-link info text-logo"
-                >8 096 111 11 11</a
+                >+38 096 111 11 11</a
               >
             </li>
           </ul>
           <div class="soc-mob">
             <ul class="soc-mob-list">
               <li class="soc-mob-item">
-                <div class="border">
-                  <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer   nofollow"
-                    class="soc-mob-link"
-                    >Instagram
-                  </a>
-                  <div class="border-mob"></div>
-                </div>
+                <a href="" target="_blank" rel="noopener noreferrer   nofollow" class="soc-mob-link"
+                  >Instagram
+                </a>
               </li>
               <li class="soc-mob-item">
                 <a href="" target="_blank" rel="noopener noreferrer  nofollow" class="soc-mob-link">
                   Twitter
                 </a>
-                <svg class="soc-mob-icon" width="1" height="22">
-                  <use href="./images/symbol-defs.svg#icon-line-mob"></use>
-                </svg>
               </li>
               <li class="soc-mob-item">
                 <a href="" target="_blank" rel="noopener noreferrer nofollow" class="soc-mob-link">
                   Facebook
                 </a>
-                <svg class="soc-mob-icon" width="1" height="22">
-                  <use href="./images/symbol-defs.svg#icon-line-mob"></use>
-                </svg>
               </li>
               <li class="soc-mob-item">
                 <a href="" target="_blank" rel="noopener noreferrer nofollow" class="soc-mob-link">
                   Linkedin
                 </a>
-                <svg class="soc-mob-icon" width="1" height="22">
-                  <use href="./images/symbol-defs.svg#icon-line-mob"></use>
-                </svg>
               </li>
             </ul>
           </div>
         </div>
+        <button class="open-menu" type="button">
+          <svg class="open-menu__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-open-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main">
@@ -550,7 +534,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer main-bottom">
+    <!-- <footer class="footer main-bottom">
       <div class="container">
         <div class="footer__container">
           <a href="./index.html" lang="en" class="logo-link text-logo"
@@ -635,7 +619,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden bdp" data-modal>
       <div class="modal-container section">
         <button type="button" class="modal-container__close" data-modal-close>

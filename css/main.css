@@ -67,7 +67,6 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -252,6 +251,11 @@ img {
 }
 
 .mob-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--white-color);
 }
 
@@ -266,8 +270,6 @@ img {
 .mob-menu-link {
   width: 219px;
   height: 48px;
-  left: 40px;
-  top: 132px;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -277,15 +279,9 @@ img {
   color: #212121;
 }
 
-.current {
-  color: #2196f3;
-}
-
 .mob-contacts-link-email {
   width: 296px;
   height: 40px;
-  left: 40px;
-  top: 562px;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -296,8 +292,6 @@ img {
 .mob-contacts-link {
   width: 231px;
   height: 28px;
-  left: 40px;
-  top: 634px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -305,12 +299,19 @@ img {
   color: #757575;
 }
 
+.soc-mob-list {
+  display: flex;
+}
+
+.border {
+  position: absolute;
+  display: inline;
+}
+
 .soc-mob-link {
   text-decoration: none;
   width: 85px;
   height: 22px;
-  left: 40px;
-  top: 726px;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -322,10 +323,6 @@ img {
   position: absolute;
   width: 22px;
   height: 0px;
-  left: 135px;
-  top: 726px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
 }
 
 .hero {
