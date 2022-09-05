@@ -1,4 +1,4 @@
-.site-contacts .connection {
+.haader > .site-contacts .connection {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -7,18 +7,20 @@
   // }
 }
 
-.site-contacts__email {
-  @media screen and (max-width: 767px) {
-    display: none;
+.site-contacts {
+  &__email {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-right: 30px;
+    }
   }
-  @media screen and (min-width: 1200px) {
-    padding-right: 30px;
-  }
-}
 
-.site-contacts__telephone {
-  @media screen and (max-width: 767px) {
-    display: none;
+  &__telephone {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -39,7 +41,7 @@
 //   margin-right: 15px;
 // }
 
-.site-contacts__link,
+.site-contacts-link,
 .info:hover {
   color: var(--accent-color);
 }
@@ -58,7 +60,7 @@
 
 /*------------icons------------*/
 
-.site-contacts__icon {
+.site-contacts-icon {
   fill: currentColor;
   margin-right: 10px;
 }

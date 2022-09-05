@@ -6,7 +6,9 @@
 }
 
 .subscribe__form {
-  padding-top: 12px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
 }
 
 .subscribe__name {
@@ -15,16 +17,20 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
+  text-align: center;
 }
 
 .subscribe__correct {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  justify-content: center;
 }
 
 .subscribe__input {
   padding-left: 16px;
   height: 50px;
-  width: 358px;
+  width: 100%;
   border-color: #ffffff4d;
   border-radius: 4px;
   outline: none;
@@ -42,7 +48,9 @@
 }
 
 .subscribe__button {
-  margin-left: 12px;
+  position: absolute;
+  margin: 20px 140px 60px 140px;
+  text-align: center;
   width: 200px;
   height: 50px;
   display: flex;
