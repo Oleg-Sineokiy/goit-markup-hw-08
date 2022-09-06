@@ -1317,11 +1317,23 @@ img {
     padding: 40px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .modal-container.section {
     width: 450px;
     height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-container.section {
+    width: 528px;
+    height: 581px;
   }
 }
 
