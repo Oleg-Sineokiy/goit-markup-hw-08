@@ -508,6 +508,12 @@ img {
   width: auto;
   justify-content: center;
 }
+@media screen and (max-width: 479px) {
+  .hero__title {
+    padding: 95px 30px 30px 30px;
+    font-size: 23px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__title {
     padding: 118px 204px 30px 204px;
@@ -535,6 +541,11 @@ img {
   display: block;
   margin: 0 auto 0 auto;
   padding: 10px 32px;
+}
+@media screen and (max-width: 479px) {
+  .hero__button {
+    padding: 6px 20px;
+  }
 }
 .hero__button:hover {
   background-color: var(--accent-secondary-color);
@@ -1294,6 +1305,25 @@ img {
 .modal {
   padding: 40px;
 }
+@media screen and (min-width: 320px) {
+  .modal {
+    padding: 40px 25px 25px 25px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-container.section {
+    width: 450px;
+    height: 609px;
+  }
+}
 
 .modal__text {
   font-weight: 700;
@@ -1430,6 +1460,11 @@ img {
   justify-content: center;
   box-sizing: border-box;
 }
+@media screen and (min-width: 480px) {
+  .check__check {
+    font-size: 12px;
+  }
+}
 
 .check__check .check__span {
   display: inline-flex;
@@ -1477,4 +1512,11 @@ img {
 }
 .check-btn:hover, .check-btn:focus {
   background-color: var(--accent-secondary-color);
+}
+@media screen and (max-width: 479px) {
+  .check-btn {
+    padding: 6px 45px;
+    font-size: 13px;
+    margin: -8px auto 0 auto;
+  }
 }/*# sourceMappingURL=main.css.map */
